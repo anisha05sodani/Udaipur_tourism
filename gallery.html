@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .header {
+            background-color: #dda50c;
+            color: white;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .header h1 {
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            font-size: 36px;
+        }
+
+        .nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        .nav a:hover {
+            color: #ffce92;
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 10px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.15); /* Makes the entire item (including image and overlay) bigger */
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1); /* Enlarges the image inside the item */
+        }
+
+        .gallery-item .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 18px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery-item:hover .overlay {
+            opacity: 1; /* Shows the overlay on hover */
+        }
+
+        .footer {
+            background-color: #222;
+            color: #bbb;
+            text-align: center;
+            padding: 20px 10px;
+            font-size: 16px;
+            border-top: 2px solid #ffce92;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+
+        .footer a {
+            color: #ffce92;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Gallery</h1>
+    </div>
+
+    <div class="nav">
+        <a href="tourism.html">Home</a>
+        <a href="heritage.html">Heritage</a>
+        <a href="hotel.html">Hotel Booking</a>
+        <a href="gallery.html">Gallery</a>
+    </div>
+
+    <div class="gallery-container">
+        <!-- Gallery Item 1 -->
+        <div class="gallery-item">
+            <img src="city-palace.avif" alt="City Palace">
+            <div class="overlay">City Palace</div>
+        </div>
+
+        <!-- Gallery Item 2 -->
+        <div class="gallery-item">
+            <img src="lake-palace.avif" alt="Lake Palace">
+            <div class="overlay">Lake Palace</div>
+        </div>
+
+        <!-- Gallery Item 3 -->
+        <div class="gallery-item">
+            <img src="jag-mandir.avif" alt="Jag Mandir">
+            <div class="overlay">Jag Mandir</div>
+        </div>
+
+        <!-- Gallery Item 4 -->
+        <div class="gallery-item">
+            <img src="bagore-ki-haveli.avif" alt="Bagore Ki Haveli">
+            <div class="overlay">Bagore Ki Haveli</div>
+        </div>
+
+        <!-- Gallery Item 5 -->
+        <div class="gallery-item">
+            <img src="saheliyon-ki-bari.avif" alt="Saheliyon Ki Bari">
+            <div class="overlay">Saheliyon Ki Bari</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="eklingji-temple.avif" alt="Eklingji Temple">
+            <div class="overlay">Eklingji Temple</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="fateh-sagar.jpg" alt="Fateh Sagar">
+            <div class="overlay">Fateh Sagar</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="haldighati.avif" alt="HaldiGhati">
+            <div class="overlay">HaldiGhati</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="lake-pichola.jpg" alt="Lake Pichola">
+            <div class="overlay">Lake Pichola</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="mansapurna-karni-mata.jpg" alt="Mansapurna Karni Mata">
+            <div class="overlay">Mansapurna Karni Mata</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="shilp-gram.jpg" alt="Shilp Gram">
+            <div class="overlay">Shilp Gram</div>
+        </div>
+        <!-- Add more images as needed -->
+    </div>
+    <div class="footer">
+        <p>&copy; 2025 Udaipur City Tourism. All rights reserved.</p>
+    </div>
+</body>
+
+</html>

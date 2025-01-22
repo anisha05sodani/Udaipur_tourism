@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heritage Places of Udaipur</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .header {
+            background-color: #dda50c;
+            background-size: cover;
+            background-position: center;
+            color: white;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .header h1 {
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            font-size: 36px;
+        }
+
+        .nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        .nav a:hover {
+            color: #ffce92;
+        }
+
+        .content {
+            max-width: 100%;
+            padding: 20px;
+        }
+
+        .places-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 50px;
+        }
+
+        .place {
+            flex: 0 0 300px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .place {
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+        }
+
+        .place:hover {
+            transform: scale(1.05); /* Slightly enlarge the card */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Deeper shadow for emphasis */
+        }
+
+        .place img {
+            width: 100%;
+            border-radius: 5px 5px 0 0;
+            margin-bottom: 10px;
+        }
+
+        .place h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #444;
+        }
+
+        .place p {
+            font-size: 16px;
+            margin-bottom: 15px;
+            padding: 0 10px;
+        }
+
+        .place a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .place a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            background-color: #222;
+            color: #bbb;
+            text-align: center;
+            padding: 20px 10px;
+            font-size: 16px;
+            border-top: 2px solid #ffce92;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+
+        .footer a {
+            color: #ffce92;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Heritage Places of Udaipur</h1>
+    </div>
+
+    <div class="nav">
+        <a href="tourism.html">Home</a>
+        <a href="heritage.html">Heritage</a>
+        <a href="hotel.html">Hotel Booking</a>
+        <a href="gallery.html">Gallery</a>
+    </div>
+
+    <div class="content">
+        <div class="places-container">
+            <!-- City Palace -->
+            <div class="place">
+                <img src="city-palace.avif" alt="City Palace">
+                <h2>City Palace</h2>
+                <p>The City Palace is an architectural marvel overlooking Lake Pichola.</p>
+                <a href="city-palace.html">Learn more about City Palace &rarr;</a>
+            </div>
+
+            <!-- Lake Palace -->
+            <div class="place">
+                <img src="lake-palace.avif" alt="Lake Palace">
+                <h2>Lake Palace</h2>
+                <p>Located on an island in Lake Pichola, the Lake Palace is built entirely of white marble.</p>
+                <a href="lake-palace.html">Learn more about Lake Palace &rarr;</a>
+            </div>
+
+            <!-- Jag Mandir -->
+            <div class="place">
+                <img src="jag-mandir.avif" alt="Jag Mandir">
+                <h2>Jag Mandir</h2>
+                <p>Jag Mandir is famous for its intricate carvings and lush gardens.</p>
+                <a href="jag-mandir.html">Learn more about Jag Mandir &rarr;</a>
+            </div>
+
+            <!-- Bagore Ki Haveli -->
+            <div class="place">
+                <img src="bagore-ki-haveli.avif" alt="Bagore Ki Haveli">
+                <h2>Bagore Ki Haveli</h2>
+                <p>A historic haveli showcasing Rajasthani art, costumes, and royal artifacts.</p>
+                <a href="bagore-ki-haveli.html">Learn more about Bagore Ki Haveli &rarr;</a>
+            </div>
+
+            <!-- Saheliyon Ki Bari -->
+            <div class="place">
+                <img src="saheliyon-ki-bari.avif" alt="Saheliyon Ki Bari">
+                <h2>Saheliyon Ki Bari</h2>
+                <p>A beautiful garden built for royal ladies, adorned with fountains and marble pavilions.</p>
+                <a href="saheliyon-ki-bari.html">Learn more about Saheliyon Ki Bari &rarr;</a>
+            </div>
+
+            <div class="place">
+                <img src="eklingji-temple.avif" alt="Saheliyon Ki Bari">
+                <h2>Eklingji Temple</h2>
+                <p>The ancient temple is dedicated to Lord Shiva, and is an important Shiva pilgrim spot in the country.</p>
+                <a href="eklingji-temple.html">Learn more about Eklingji Temple &rarr;</a>
+            </div>
+
+            <div class="place">
+                <img src="haldighati.avif" alt="Saheliyon Ki Bari">
+                <h2>HaldiGhati</h2>
+                <p>The “Valley of the Turmeric '', the beauty of the pass indeed derives from the striking yellow cliff sides that rise on either side of it.</p>
+                <a href="haldighati.html">Learn more about HaldiGhati &rarr;</a>
+            </div>
+
+            <div class="place">
+                <img src="fateh-sagar.jpg" alt="Saheliyon Ki Bari">
+                <h2>Fateh Sagar</h2>
+                <p>an artificial lake named after Maharana Fateh Singh of Udaipur and Mewar, constructed north-west of Udaipur, to the north of Lake Pichola in the 1680s.</p>
+                <a href="fateh-sagar.html">Learn more about Fateh Sagar &rarr;</a>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2025 Udaipur City Tourism. All rights reserved.</p>
+    </div>
+</body>
+
+</html>
