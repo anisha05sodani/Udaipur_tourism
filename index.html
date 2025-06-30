@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udaipur City Tourism</title>
+    <link rel="icon" href="images.jpeg" type="image/x-icon">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .bg {
+            position: relative;
+            width: 100%;
+            height: 700px;
+            background-color: #ffce92d8;
+        }
+
+        .bg::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url('photo.avif');
+        }
+
+        .head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 150px;
+            padding: 0 20px;
+            background-color: #dda50c;
+            color: white;
+        }
+
+        .nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        .nav a:hover {
+            color: #ffce92;
+        }
+
+        .logo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            overflow: hidden;
+            margin-left: 70px;
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .head h1 {
+            font-size: 32px;
+            margin-left: 20px;
+        }
+
+        .page {
+            position: absolute;
+            top: 300px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            color: white;
+            font-size: 24px;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .content {
+            background-color: #444;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .content h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #ffce92;
+        }
+
+        .content p {
+            font-size: 18px;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .content p a {
+            color: #ffce92;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .content p a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            background-color: #222;
+            color: #bbb;
+            text-align: center;
+            padding: 20px 10px;
+            font-size: 16px;
+            border-top: 2px solid #ffce92;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+
+        .footer a {
+            color: #ffce92;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .search-bar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .search-bar input {
+            width: 300px;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px ;
+        }
+
+        .search-bar button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #383838;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .search-bar button:hover {
+            background-color: #000000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <div class="logo">
+            <img src="images.jpeg" alt="Udaipur City Logo">
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search attractions, hotels, and more..." />
+            <button>Search</button>
+        </div>
+    </div>
+
+    <div class="nav">
+        <a href="#">Home</a>
+        <a href="heritage.html">Heritage </a>
+        <a href="hotel.html">Hotel Booking</a>
+        <a href="gallery.html">Gallery</a>
+    </div>
+
+    <div class="bg">
+        <div class="page">
+            <h2>Welcome to Udaipur, the City of Lakes</h2>
+            <p>Explore the beauty and heritage of Udaipur, known for its rich history, majestic palaces, and tranquil lakes.</p>
+        </div>
+    </div>
+
+    <div class="content">
+        <h2>Discover Udaipur</h2>
+        <p>Udaipur, also known as the "Venice of the East", is a historic city situated in Rajasthan, India. With its stunning lakes, beautiful palaces, and vibrant culture, Udaipur is a must-visit destination for any traveler. The city is famous for the Lake Palace, City Palace, and Jag Mandir, among many other landmarks. Whether you're here to explore the rich history, relax by the lakeside, or enjoy traditional Rajasthani cuisine, Udaipur has something for everyone. Learn more about the city <a href="#">here</a>.</p>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 Udaipur City Tourism. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+    </div>
+</body>
+
+</html>
